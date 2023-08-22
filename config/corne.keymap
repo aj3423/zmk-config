@@ -19,9 +19,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans         &kp Q  &kp W             &kp E          &kp R         &kp T      &kp Y            &kp U      &kp I    &kp O     &kp P  &trans
-&trans         &kp A  &kp S           &lt 2 D        &lt 1 F  &mt LSHIFT G      &kp H          &lt 1 J    &lt 2 K    &kp L  &kp SEMI  &trans
-&trans  &mt LSHIFT Z  &kp X             &kp C          &kp V         &kp B      &kp N            &kp M  &kp COMMA  &kp DOT  &kp FSLH  &trans
+&trans         &kp Q  &kp W             &kp E          &kp R         &kp T      &kp Y            &kp U      &kp I    &kp O             &kp P  &trans
+&trans         &kp A  &kp S           &lt 2 D        &lt 1 F  &mt LSHIFT G      &kp H          &lt 1 J    &lt 2 K    &kp L          &kp SEMI  &trans
+&trans  &mt LSHIFT Z  &kp X             &kp C          &kp V         &kp B      &kp N            &kp M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH  &trans
                              &mt LEFT_ALT TAB  &mt LCTRL ESC   &lt 1 SPACE    &kp RET  &lt 1 BACKSPACE  &lt 2 DEL
             >;
         };
@@ -37,7 +37,7 @@
 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5      &trans  &kp PAGE_UP  &kp PAGE_DOWN     &trans  &trans  &trans
 &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &kp LEFT     &kp DOWN         &kp UP  &kp RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans     &kp HOME        &kp END     &trans  &trans  &trans
-                        &trans  &trans  &trans      &trans   &kp RSHIFT         &trans
+                        &trans  &trans  &trans      &trans       &trans         &trans
             >;
         };
 
@@ -49,10 +49,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans    &kp AT     &kp HASH   &kp DLLR     &trans    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-&trans  &trans  &kp EXCL  &kp PERCENT  &kp GRAVE  &kp TILDE    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &trans
-&trans  &trans    &trans       &trans     &trans     &trans    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &trans
-                             &kp LGUI     &trans     &trans       &trans     &trans           &trans
+&trans     &trans     &kp AT     &kp HASH   &kp DLLR  &kp PERCENT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR       &kp RPAR  &trans
+&trans  &kp CARET   &kp EXCL  &kp PERCENT  &kp GRAVE    &kp TILDE    &kp MINUS   &kp PLUS         &kp LBKT  &kp RBKT       &kp PIPE  &trans
+&trans     &trans  &kp LC(X)    &kp LC(C)  &kp LC(V)       &trans    &kp UNDER  &kp EQUAL         &kp LBRC  &kp RBRC  &kp BACKSLASH  &trans
+                                 &kp LGUI   &kp LGUI       &trans       &trans     &trans           &trans
             >;
         };
     };

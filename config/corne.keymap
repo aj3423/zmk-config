@@ -34,10 +34,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5      &trans  &kp PAGE_UP  &kp PAGE_DOWN     &trans  &trans  &trans
-&trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &kp LEFT     &kp DOWN         &kp UP  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &kp HOME        &kp END     &trans  &trans  &trans
-                        &trans  &trans  &trans      &trans       &trans         &trans
+&trans  &kp N1  &kp N2         &kp N3         &kp N4             &kp N5      &trans  &kp PAGE_UP  &kp PAGE_DOWN     &trans         &trans  &trans
+&trans  &kp N6  &kp N7         &kp N8         &kp N9             &kp N0    &kp LEFT     &kp DOWN         &kp UP  &kp RIGHT  &kp LS(LA(A))  &trans
+&trans  &trans  &trans         &trans         &trans             &trans      &trans     &kp HOME        &kp END     &trans         &trans  &trans
+                        &kp LA(ENTER)  &kp LA(SPACE)  &kp LC(LA(ENTER))      &trans       &trans         &trans
             >;
         };
 
@@ -49,10 +49,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans     &trans     &kp AT     &kp HASH   &kp DLLR  &kp PERCENT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR       &kp RPAR  &trans
-&trans  &kp CARET   &kp EXCL  &kp PERCENT  &kp GRAVE    &kp TILDE    &kp MINUS   &kp PLUS         &kp LBKT  &kp RBKT       &kp PIPE  &trans
-&trans     &trans  &kp LC(X)    &kp LC(C)  &kp LC(V)       &trans    &kp UNDER  &kp EQUAL         &kp LBRC  &kp RBRC  &kp BACKSLASH  &trans
-                                 &kp LGUI   &kp LGUI       &trans       &trans     &trans           &trans
+&trans     &trans    &kp AT     &kp HASH   &kp DLLR  &kp PERCENT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR       &kp RPAR  &trans
+&trans  &kp CARET  &kp EXCL  &kp PERCENT  &kp GRAVE    &kp TILDE    &kp MINUS   &kp PLUS         &kp LBKT  &kp RBKT       &kp PIPE  &trans
+&trans     &trans    &trans       &trans     &trans       &trans    &kp UNDER  &kp EQUAL         &kp LBRC  &kp RBRC  &kp BACKSLASH  &trans
+                                &kp LGUI   &kp LGUI       &trans       &trans     &trans           &trans
             >;
         };
     };

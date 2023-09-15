@@ -20,7 +20,7 @@
 
             bindings = <
 &trans  &kp Q         &kp W  &kp E             &kp R          &kp T        &kp Y    &kp U            &kp I      &kp O    &lt 3 P           &trans
-&trans  &kp A         &kp S  &lt 2 D           &lt 1 F        &kp G        &kp H    &lt 1 J          &lt 2 K    &kp L    &kp SEMI          &trans
+&trans  &kp A         &kp S  &lt 2 D           &lt 1 F        &kp G        &kp H    &lt 1 J          &lt 2 K    &lt 3 L  &kp SEMI          &trans
 &trans  &mt LSHIFT Z  &kp X  &kp C             &kp V          &kp B        &kp N    &kp M            &kp COMMA  &kp DOT  &mt RSHIFT SLASH  &trans
                              &mt LEFT_ALT TAB  &mt LCTRL ESC  &kp SPACE    &kp RET  &lt 1 BACKSPACE  &lt 2 DEL
             >;

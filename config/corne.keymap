@@ -50,8 +50,8 @@
 
             bindings = <
 &trans  &trans     &kp AT     &kp HASH          &kp DLLR           &kp PERCENT    &kp CARET        &kp AMPS              &kp KP_MULTIPLY  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-&trans  &kp TILDE  &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp PIPE       &kp EXCLAMATION  &kp EQUAL             &kp MINUS        &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
-&trans  &trans     &trans     &trans            &trans             &trans         &trans           &kp PLUS              &kp UNDER        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp TILDE  &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp PIPE       &kp EXCLAMATION  &kp EQUAL             &kp MINUS        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans     &trans     &trans            &trans             &trans         &trans           &kp PLUS              &kp UNDER        &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
                               &kp BACKSPACE     &kp DEL            &trans         &trans           &kp NON_US_BACKSLASH  &trans
             >;
         };

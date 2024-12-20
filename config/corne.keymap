@@ -16,14 +16,15 @@
 &lt {
     tapping-term-ms = <200>;
     quick-tap-ms = <200>;
-    require-prior-idle-ms = <125>;
-    flavor = "tap-preferred";
+    require-prior-idle-ms = <80>;
+    // flavor = "tap-preferred";
+    flavor = "hold-preferred";
 };
 // for &mt only
 &mt {
     tapping-term-ms = <200>;
     quick-tap-ms = <200>;
-    require-prior-idle-ms = <125>;
+    require-prior-idle-ms = <80>;
     flavor = "hold-preferred";
 };
 

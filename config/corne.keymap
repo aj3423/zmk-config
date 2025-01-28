@@ -34,26 +34,27 @@
 };
 
 / {
-	behaviors {
-		// for keys like control, trigger hold behavior immediately, without the `require-prior-idle-ms`
-		//mt2: mod-tap-2 {
-			//// compatible = "zmk,behavior-hold-tap";
-			//compatible = "zmk,behavior-mod-morph";
-			//tapping-term-ms = <200>;
-			//quick-tap-ms = <200>;
-			//flavor = "hold-preferred";
-			//#binding-cells = <0>;
-			//bindings = <&kp>, <&kp>;
-		//};
-		// for keys like control, trigger hold behavior immediately, without the `require-prior-idle-ms`
-		lt2: layer-tap-2 {
-			compatible = "zmk,behavior-hold-tap";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <200>;
-			flavor = "hold-preferred";
-			#binding-cells = <2>;
+    behaviors {
+        // for keys like control, trigger hold behavior immediately, without the `require-prior-idle-ms`
+        //mt2: mod-tap-2 {
+        //// compatible = "zmk,behavior-hold-tap";
+        //compatible = "zmk,behavior-mod-morph";
+        //tapping-term-ms = <200>;
+        //quick-tap-ms = <200>;
+        //flavor = "hold-preferred";
+        //#binding-cells = <0>;
+        //bindings = <&kp>, <&kp>;
+        //};
+        // for keys like control, trigger hold behavior immediately, without the `require-prior-idle-ms`
+
+        lt2: layer-tap-2 {
+            compatible = "zmk,behavior-hold-tap";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            flavor = "hold-preferred";
+            #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
-		};
+        };
     };
 
     keymap {
@@ -61,10 +62,10 @@
 
         default_layer {
             bindings = <
-&trans  &kp Q         &kp W  &kp F             &kp P           &kp B        &kp J    &kp L             &kp U      &kp Y    &kp SEMI          &trans
-&trans  &kp A         &kp R  &lt 2 S           &lt 1 T         &kp G        &kp M    &lt 1 N           &lt 2 E    &lt 3 I  &kp O             &trans
-&trans  &mt LSHIFT Z  &kp X  &kp C             &kp D           &kp V        &kp K    &kp H             &kp COMMA  &kp DOT  &mt RSHIFT SLASH  &trans
-                             &mt LEFT_ALT TAB  &mt LCTRL ESC   &kp SPACE    &kp RET  &lt2 1 BACKSPACE  &lt 2 DEL
+&trans  &kp Q         &kp W    &kp F             &kp P          &kp B        &kp J    &kp L             &kp U      &kp Y    &kp SEMI          &trans
+&trans  &kp A         &lt 3 R  &lt 2 S           &lt 1 T        &kp G        &kp M    &lt 1 N           &lt 2 E    &lt 3 I  &kp O             &trans
+&trans  &mt LSHIFT Z  &kp X    &kp C             &kp D          &kp V        &kp K    &kp H             &kp COMMA  &kp DOT  &mt RSHIFT SLASH  &trans
+                               &mt LEFT_ALT TAB  &mt LCTRL ESC  &kp SPACE    &kp RET  &lt2 1 BACKSPACE  &lt 2 DEL
             >;
         };
 

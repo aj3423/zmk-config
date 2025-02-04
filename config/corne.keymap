@@ -12,24 +12,20 @@
 // doc: https://zmk.dev/docs/keymaps/behaviors/hold-tap
 // example: https://github.com/jamiethemorris/zmk-config/blob/master/config/sofle.keymap
 // for &lt only
-
 &lt {
     tapping-term-ms = <200>;
     quick-tap-ms = <200>;
     require-prior-idle-ms = <50>;
-
     // flavor = "tap-preferred";
     // flavor = "hold-preferred";
-
     flavor = "balanced";
 };
 
 // for &mt only
-
 &mt {
     tapping-term-ms = <200>;
     quick-tap-ms = <200>;
-    require-prior-idle-ms = <50>;
+    //require-prior-idle-ms = <50>;
     flavor = "hold-preferred";
 };
 
@@ -37,16 +33,16 @@
     behaviors {
         // for keys like control, trigger hold behavior immediately, without the `require-prior-idle-ms`
         //mt2: mod-tap-2 {
-        //// compatible = "zmk,behavior-hold-tap";
-        //compatible = "zmk,behavior-mod-morph";
-        //tapping-term-ms = <200>;
-        //quick-tap-ms = <200>;
-        //flavor = "hold-preferred";
-        //#binding-cells = <0>;
-        //bindings = <&kp>, <&kp>;
+		//	// compatible = "zmk,behavior-hold-tap";
+		//	compatible = "zmk,behavior-mod-morph";
+		//	tapping-term-ms = <200>;
+		//	quick-tap-ms = <200>;
+		//	flavor = "hold-preferred";
+		//	#binding-cells = <0>;
+		//	bindings = <&kp>, <&kp>;
         //};
-        // for keys like control, trigger hold behavior immediately, without the `require-prior-idle-ms`
 
+        // for keys like control, trigger hold behavior immediately, without the `require-prior-idle-ms`
         lt2: layer-tap-2 {
             compatible = "zmk,behavior-hold-tap";
             tapping-term-ms = <200>;

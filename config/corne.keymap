@@ -7,15 +7,14 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 // doc: https://zmk.dev/docs/keymaps/behaviors/hold-tap
 // example: https://github.com/jamiethemorris/zmk-config/blob/master/config/sofle.keymap
 // for &lt only
+
 &lt {
     //require-prior-idle-ms = <50>;
-
-	// not good, s+u quickly -> *, ctrl+s require quick tapping s
+    // not good, s+u quickly -> *, ctrl+s require quick tapping s
     //tapping-term-ms = <120>;
     //quick-tap-ms = <200>;
     //flavor = "tap-preferred";
@@ -24,16 +23,18 @@
     quick-tap-ms = <200>;
     flavor = "balanced";
 
-
     //flavor = "hold-preferred";
     // flavor = "balanced";
- };
+};
 
 // for &mt only
+
 &mt {
     tapping-term-ms = <200>;
     quick-tap-ms = <200>;
+
     //require-prior-idle-ms = <50>;
+
     flavor = "hold-preferred";
 };
 
@@ -41,16 +42,16 @@
     behaviors {
         // for keys like control, trigger hold behavior immediately, without the `require-prior-idle-ms`
         //mt2: mod-tap-2 {
-		//	// compatible = "zmk,behavior-hold-tap";
-		//	compatible = "zmk,behavior-mod-morph";
-		//	tapping-term-ms = <200>;
-		//	quick-tap-ms = <200>;
-		//	flavor = "hold-preferred";
-		//	#binding-cells = <0>;
-		//	bindings = <&kp>, <&kp>;
+        //	// compatible = "zmk,behavior-hold-tap";
+        //	compatible = "zmk,behavior-mod-morph";
+        //	tapping-term-ms = <200>;
+        //	quick-tap-ms = <200>;
+        //	flavor = "hold-preferred";
+        //	#binding-cells = <0>;
+        //	bindings = <&kp>, <&kp>;
         //};
-
         // for keys like control, trigger hold behavior immediately, without the `require-prior-idle-ms`
+
         lt2: layer-tap-2 {
             compatible = "zmk,behavior-hold-tap";
             tapping-term-ms = <200>;
@@ -93,10 +94,10 @@
 
         layer_3 {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3      &kp F4   &kp F5     &kp CAPS  &trans  &trans      &trans  &trans  &trans
-&trans  &kp F6  &kp F7  &kp F8      &kp F9   &kp F10    &trans    &trans  &trans      &trans  &trans  &trans
-&trans  &trans  &trans  &kp F11     &kp F12  &none      &trans    &trans  &trans      &trans  &trans  &trans
-                        &bt BT_CLR  &trans   &trans     &to 4     &trans  &bt BT_CLR
+&trans  &kp F1  &kp F2  &kp F3   &kp F4   &kp F5        &kp CAPS    &trans  &trans  &trans  &trans  &trans
+&trans  &kp F6  &kp F7  &kp F8   &kp F9   &kp F10       &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp F11  &kp F12  &none         &trans      &trans  &trans  &trans  &trans  &trans
+                        &trans   &trans   &bt BT_CLR    &bt BT_CLR  &trans  &to 4
             >;
         };
 

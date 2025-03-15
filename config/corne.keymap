@@ -13,13 +13,21 @@
 // example: https://github.com/jamiethemorris/zmk-config/blob/master/config/sofle.keymap
 // for &lt only
 &lt {
-    tapping-term-ms = <200>;
+    //require-prior-idle-ms = <50>;
+
+	// not good, s+u quickly -> *, ctrl+s require quick tapping s
+    //tapping-term-ms = <120>;
+    //quick-tap-ms = <200>;
+    //flavor = "tap-preferred";
+
+    tapping-term-ms = <120>;
     quick-tap-ms = <200>;
-    require-prior-idle-ms = <50>;
-    // flavor = "tap-preferred";
-    // flavor = "hold-preferred";
     flavor = "balanced";
-};
+
+
+    //flavor = "hold-preferred";
+    // flavor = "balanced";
+ };
 
 // for &mt only
 &mt {
@@ -61,7 +69,7 @@
 &trans  &kp Q         &kp W    &kp F             &kp P          &kp B        &kp J    &kp L             &kp U      &kp Y    &kp SEMI          &trans
 &trans  &kp A         &lt 3 R  &lt 2 S           &kp T          &kp G        &kp M    &lt 1 N           &lt 2 E    &lt 3 I  &kp O             &trans
 &trans  &mt LSHIFT Z  &kp X    &kp C             &kp D          &kp V        &kp K    &kp H             &kp COMMA  &kp DOT  &mt RSHIFT SLASH  &trans
-                               &mt LEFT_ALT TAB  &mt LCTRL ESC  &kp SPACE    &kp RET  &lt2 1 BACKSPACE  &lt 2 DEL
+                               &mt LEFT_ALT TAB  &mt LCTRL ESC  &kp SPACE    &kp RET  &lt2 1 BACKSPACE  &kp DEL
             >;
         };
 
